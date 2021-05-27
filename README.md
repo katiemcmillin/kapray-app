@@ -17,7 +17,7 @@ import mongoose from 'mongoose';
     size: {type: String, required: true},
     description: {type: String, required: true},
     username: {type: String, required: true},
-    link: {type: String, required: true},
+    imageURL: {type: String, required: true},
      { timestamps: true }
   });
 
