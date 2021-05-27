@@ -19,14 +19,23 @@ import mongoose from 'mongoose';
     price: {type: String, required: true},
     body: {type: String, required: true},
     description: {type: String, required: true},
+<<<<<<< HEAD
     username: {type: String, required: true},
     link: {type: String, required: true},
+=======
+    username: {type: String, required: true}
+    link: {type: String, required: true}
+>>>>>>> 48b67a7 (added schema to readme.md)
      { timestamps: true }
   });
 
   export default mongoose.model('products', Product)
+<<<<<<< HEAD
   ```
 
+=======
+```
+>>>>>>> 48b67a7 (added schema to readme.md)
 
 ## Component Hierarchy
 ![image](https://user-images.githubusercontent.com/82814499/119856967-24d83400-bee1-11eb-9a63-c7b66cbcf1ac.png)
