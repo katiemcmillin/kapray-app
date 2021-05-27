@@ -50,6 +50,8 @@ export default mongoose.model('users', User)
 ![imageAlt](https://i.imgur.com/Sd6kp4x.png)
 ![imageAlt](https://i.imgur.com/x731XDN.png)
 
+## Team Expectations 
+https://docs.google.com/document/d/1H2JOmVHvYuuSe-jUFXs8rbawBYQsRjWhRnEv4bNDEHQ/edit?usp=sharing - automatic!
 
 ### MVP/PostMVP
 
