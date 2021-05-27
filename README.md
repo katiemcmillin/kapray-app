@@ -1,5 +1,2 @@
 # kapray-app
 clothing app
-
-
-
