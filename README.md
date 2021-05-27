@@ -28,7 +28,16 @@ KAPRAY is an app that allows users to upload their clothing they would like to s
 
 
 #### MVP 
-
+- User Authentication
+- Full backend construction using Express, Mongoose, and MongoDB
+- Full frontend construction using React
+- CRUD implementation in app
+- Deploy using Heroku
 
 #### PostMVP  
-
+- Filter feature
+- Sort and Search feature
+- Adding own clothing
+- Dark Mode
+- Shopping Cart
+- Favorite System (Like button)
