@@ -53,3 +53,9 @@ import mongoose from 'mongoose';
 
 #### PostMVP  
 
+- Filter feature
+- Sort and Search feature
+- Adding own clothing
+- Dark Mode
+- Shopping Cart
+- Favorite System (Like button)
