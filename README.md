@@ -1,9 +1,6 @@
 # Project Overview
 
-
 ## KAPRAY App
-
-
 
 ## Project Description
 KAPRAY is an app that allows users to upload their clothing they would like to sell. They would be able to edit and delete their post after uploading it. There is a seperate "Apparel" screen that allows the users to view all the products on the site. The user will only be able to have access to uploading a product only if they create an account. If the user already has an account with the site they would be able to sign in using their previously made credentials.
@@ -17,7 +14,7 @@ import mongoose from 'mongoose';
     {
     name:  {type: String, required: true}, 
     price: {type: String, required: true},
-    body: {type: String, required: true},
+    size: {type: String, required: true},
     description: {type: String, required: true},
     username: {type: String, required: true},
     link: {type: String, required: true},
@@ -25,8 +22,21 @@ import mongoose from 'mongoose';
   });
 
   export default mongoose.model('products', Product)
-  ```
 
+  const User = new Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+    },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
+)
+export default mongoose.model('users', User)
+
+```
 
 ## Component Hierarchy
 ![image](https://user-images.githubusercontent.com/82814499/119856967-24d83400-bee1-11eb-9a63-c7b66cbcf1ac.png)
