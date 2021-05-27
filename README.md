@@ -1,4 +1,27 @@
-# kapray-app
-clothing app
+# Project Overview
 
-awesomeSauce
+
+## KAPRAY App
+
+
+
+## Project Description
+
+
+## Schema
+
+
+## Component Hierarchy
+
+
+## Wireframes
+
+
+### MVP/PostMVP
+
+
+#### MVP 
+
+
+#### PostMVP  
+
