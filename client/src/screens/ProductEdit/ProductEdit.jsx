@@ -10,6 +10,8 @@ const ProductEdit = (props) => {
     description: '',
     imgURL: '',
     price: '',
+    size: '',
+    username: '',
   })
 
   const [isUpdated, setUpdated] = useState(false)
@@ -95,6 +97,15 @@ const ProductEdit = (props) => {
             value={product.description}
             name='description'
             required
+            onChange={handleChange}
+          />
+          <input
+            className='input-username'
+            placeholder='Username'
+            value={product.username}
+            name='username'
+            required
+            autoFocus
             onChange={handleChange}
           />
           <button type='submit' className='save-button'>
