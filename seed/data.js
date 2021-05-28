@@ -35,7 +35,7 @@ const insertData = async () => {
       description: "",
       price: "125",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 002",
@@ -44,7 +44,7 @@ const insertData = async () => {
       description: "",
       price: "140",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 003",
@@ -53,7 +53,7 @@ const insertData = async () => {
       description: "",
       price: "140",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 004",
@@ -62,7 +62,7 @@ const insertData = async () => {
       description: "",
       price: "168",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 005",
@@ -71,7 +71,7 @@ const insertData = async () => {
       description: "",
       price: "110",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 006",
@@ -80,7 +80,7 @@ const insertData = async () => {
       description: "",
       price: "130",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 007",
@@ -89,7 +89,7 @@ const insertData = async () => {
       description: "",
       price: "130",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
     {
       name: "Product 008",
@@ -98,7 +98,7 @@ const insertData = async () => {
       description: "",
       price: "130",
       size: " ",
-      user: "admin",
+      username: "admin",
     },
   ];
 
