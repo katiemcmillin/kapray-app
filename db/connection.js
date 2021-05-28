@@ -5,7 +5,7 @@ let MONGODB_URI =
   "mongodb://127.0.0.1:27017/productsAuthenticationDatabase";
 
 // Uncomment to debug Mongoose queries
-// mongoose.set('debug', true)
+mongoose.set('debug', true)
 
 // Will create indexes in MongoDB by default for faster queries
 mongoose.set("useCreateIndex", true);
