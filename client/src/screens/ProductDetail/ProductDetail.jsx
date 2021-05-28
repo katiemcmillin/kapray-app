@@ -35,7 +35,7 @@ const ProductDetail = (props) => {
           <div className='price'>{`$${product.price}`}</div>
           <div className='description'>{product.description}</div>
           <div className='size'>{product.size}</div>
-          <div className='username'>{product.admin}</div>
+          <div className='username'>{product.username}</div>
           <div className='button-container'>
             <Link className='edit-button' to={`/products/${product._id}/edit`}>
               Edit
