@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+<<<<<<< HEAD
     "dev": "node server.js"
+=======
+    "dev": "nodemon server.js"
+>>>>>>> 57d85f0 (installed dependencies)
   },
   "repository": {
     "type": "git",
