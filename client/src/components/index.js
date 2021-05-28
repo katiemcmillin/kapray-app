@@ -1,4 +1,3 @@
-
 import Layout from './Layout/Layout'
 import Product from './Product/Product'
 import Search from './Search/Search'
