@@ -59,8 +59,8 @@ const Products = (props) => {
 
   return (
     <Layout user={props.user}>
-      {/* <Search onSubmit={handleSubmit} handleSearch={handleSearch} /> */}
-      {/* <Sort onSubmit={handleSubmit} handleSort={handleSort} /> */}
+      <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="products">
         {searchResult.map((product, index) => {
           return (
