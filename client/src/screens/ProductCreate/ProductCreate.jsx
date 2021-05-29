@@ -6,10 +6,12 @@ import { createProduct } from '../../services/products'
 
 const ProductCreate = (props) => {
   const [product, setProduct] = useState({
-    name: '',
-    description: '',
-    imgURL: '',
-    price: '',
+    name:  "",
+    price: "",
+    size: "",
+    description: "",
+    username: "",
+    imageURL: "",
   })
 
   const [isCreated, setCreated] = useState(false)
@@ -61,10 +63,26 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className='input-image-link'
+          className='input-imageURL'
           placeholder='Image Link'
           value={product.imgURL}
           name='imgURL'
+          required
+          onChange={handleChange}
+        />
+        <input
+          className='input-username'
+          placeholder='Username'
+          value={product.username}
+          name='username'
+          required
+          onChange={handleChange}
+        />
+        <input
+          className='input-size'
+          placeholder='Size'
+          value={product.size}
+          name='size'
           required
           onChange={handleChange}
         />
