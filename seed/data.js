@@ -100,6 +100,42 @@ const insertData = async () => {
       size: "M",
       username: "admin",
     },
+    {
+      name: "Strappy sandals",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2020/12/21/1608516620885b1ef77d6f07c3f5213dfff5b34cdd_thumbnail_600x.webp",
+      description: "Women's faux lizard skin strappy leather sandals.",
+      price: "25",
+      size: "8",
+      username: "admin",
+    },
+    {
+      name: "Two tone sandals",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2020/02/21/1582266275ffb93a3592915483f5a2210a7f897318_thumbnail_600x.webp",
+      description: "Women's leopard print and brown leather sandals.",
+      price: "25",
+      size: "9",
+      username: "admin",
+    },
+    {
+      name: "Ballet flats",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2020/10/24/160351992341442be6d310f32c54ccdde359088300_thumbnail_600x.webp",
+      description: "Women's black pointed toe ballet flats.",
+      price: "15",
+      size: "8",
+      username: "admin",
+    },
+    {
+      name: "Belted dress",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2021/05/05/1620205533b6718c65d29b657a8c607d80df092bd7_thumbnail_600x.webp",
+      description: "Women's royal blue fitted belted dress. Polyester and spandex",
+      price: "20",
+      size: "6",
+      username: "admin",
+    },
   ];
 
   await Product.insertMany(products);
