@@ -74,7 +74,7 @@ const insertData = async () => {
       username: "admin",
     },
     {
-      name: "Product 006",
+      name: "Product 012",
       imgURL:
         "//img.ltwebstatic.com/images3_pi/2020/12/12/1607747413e77b308a7a1d3a2043d4d87a4e8712b0_thumbnail_600x.webp",
       description: "Placeholder",
@@ -85,9 +85,9 @@ const insertData = async () => {
     {
       name: "Product 007",
       imgURL:
-        "//img.ltwebstatic.com/images3_pi/2020/12/12/1607747413e77b308a7a1d3a2043d4d87a4e8712b0_thumbnail_600x.webpg",
+        "//img.ltwebstatic.com/images3_pi/2021/04/06/1617674411fca7218a3e25d72615f95bab6f8089e2_thumbnail_600x.webp",
       description: "Placeholder",
-      price: "130",
+      price: "200",
       size: " ",
       username: "admin",
     },
