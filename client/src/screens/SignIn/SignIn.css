@@ -343,17 +343,3 @@ button {
   margin-top: 100px;
   }
 }
-
-@media (max-width: 500px) {
-  .form-container {
-    margin-left: 70px;
-    margin-top: 200px;
-
-  }
-}
-
-@media (max-width: 425px) {
-  .form-container {
-    margin-left: 50px;
-  }
-}
