@@ -36,7 +36,7 @@ const ProductCreate = (props) => {
   return (
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
-        <div className="input-container1">
+        <div className="input-container">
           <label for="name">Name:</label>
           <input
             className="input-title"
@@ -47,7 +47,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container2">
+        <div className="input-container">
           <label for="price">Price:</label>
           <input
             className="input-price"
@@ -57,7 +57,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container3">
+        <div className="input-container">
           <label for="description">Description:</label>
           <input
             rows={10}
@@ -67,7 +67,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container4">
+        <div className="input-container">
           <label for="imgURL">Image Link:</label>
           <input
             className="input-imageURL"
@@ -77,7 +77,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container5">
+        <div className="input-container">
           <label for="username">Username:</label>
           <input
             className="input-username"
@@ -87,7 +87,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container6">
+        <div className="input-container">
           <label for="size">Size:</label>
           <input
             className="input-size"
