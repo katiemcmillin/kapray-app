@@ -33,11 +33,10 @@
 @media (max-width: 500px) {
   .product {
     width: 100%;
-    margin-bottom: 20px;
+    margin-right: 75px;
   }
   .product-image {
-    width: 180px;
-    margin: 15px;
-    padding: 10px;
+    width: 300px;
+    align-items: center;
   }
 }
