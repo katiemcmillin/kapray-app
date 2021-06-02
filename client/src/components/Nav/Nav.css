@@ -38,7 +38,8 @@ nav {
   flex: 2;
   max-width: 80vw;
   align-items: center;
-  font-size: 18px;
+  font-size: 30px;
+  font-weight: 450;
   display: flex;
 }
 
