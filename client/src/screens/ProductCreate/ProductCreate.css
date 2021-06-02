@@ -42,15 +42,14 @@ textarea {
 
 .input-container {
   display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 8px 0;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8px 0;
+}
 
-  }
-  
-  .input-container input {
-    width: 75%;
-    padding: 15px;
+.input-container input {
+  width: 75%;
+  padding: 15px;
 }
 
 .input-container label {
@@ -67,4 +66,3 @@ textarea {
     font-size: 28px;
   }
 }
-

@@ -90,7 +90,7 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <textarea
+          <input
             className="textarea-description"
             rows={10}
             cols={78}
