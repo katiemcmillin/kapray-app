@@ -36,7 +36,7 @@ const Nav = ({ user }) => {
           <img src="../images/KapraySunLogo.png" alt="KAPRAY SUN"/>
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">HI, {user.username}</div>}
+          {user && <div className="link welcome">HI, {(user.username).toUpperCase()}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
