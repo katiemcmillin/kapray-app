@@ -4,27 +4,27 @@ import { NavLink } from "react-router-dom";
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/add-product">
-      Add Product
+      ADD APPAREL
     </NavLink>
     <NavLink className="link" to="/sign-out">
-      Sign Out
+      SIGN OUT
     </NavLink>
   </>
 );
 const unauthenticatedOptions = (
   <>
     <NavLink className="link" to="/sign-up">
-      Sign Up
+      ADD APPAREL
     </NavLink>
     <NavLink className="link" to="/sign-in">
-      Sign In
+      SIGN - IN
     </NavLink>
   </>
 );
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/products">
-      Products
+      APPAREL
     </NavLink>
   </>
 );
@@ -33,7 +33,7 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          ProductsApp
+          <img src="./images/KapraySunLogo.png"/>
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+@import url('http://fonts.cdnfonts.com/css/sansita-one');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 nav {
   flex: 1;
@@ -16,28 +17,26 @@ nav {
   margin-left: -2px;
   margin-right: -2px;
   margin-top: -2px;
-  box-shadow: 1px 1px 1px 0.3px #cecece;
+  box-shadow: 1px 1px 15px 1px rgb(200, 200, 200);
   width: 100%;
+  background-color: #e4e4e4;
 }
 
 .logo {
-  font-family: "Kalam", cursive;
   text-align: center;
-  font-weight: bold;
-  font-size: 34px;
-  letter-spacing: -3px;
   flex: 1;
   max-width: 30vw;
   transition: 250ms all;
 }
 
 .logo:hover {
-  transform: scale(1.004);
+  transform: scale(1.25);
 }
 
 .links {
+  font-family: 'Montserrat', sans-serif;
   flex: 2;
-  max-width: 60vw;
+  max-width: 80vw;
   align-items: center;
   font-size: 18px;
   display: flex;
@@ -52,8 +51,18 @@ nav {
 }
 
 a {
+  font-weight: 450;
+  font-size: 30px;
   text-decoration: none;
+  text-align: center;
   color: black;
+  transition: 500ms all;
+}
+
+a:hover {
+  transform: scale(1.025);
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 @media (max-width: 500px) {
