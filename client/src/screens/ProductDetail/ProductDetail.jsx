@@ -33,7 +33,7 @@ const ProductDetail = (props) => {
           <div >{`$${product.price}`}</div>
           <div className='name'>{product.name.toUpperCase()}</div>
           <div className='price2'>{`Available $${product.price} USD`}</div>
-          <div className='size'>{product.size!=" " ?product.size:'out of stock'}</div>
+          <div className='size'>{product.size!==" " ?product.size:'out of stock'}</div>
           <div className='description'>{product.description}</div>
           { props.user && <div className='button-container'>
             <Link className='edit-button' to={`/products/${product._id}/edit`}>

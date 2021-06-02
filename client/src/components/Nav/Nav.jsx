@@ -33,10 +33,10 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          <img src="./images/KapraySunLogo.png"/>
+          <img src="../images/KapraySunLogo.png" alt="KAPRAY SUN"/>
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
+          {user && <div className="link welcome">HI, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
