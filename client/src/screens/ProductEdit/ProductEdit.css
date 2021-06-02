@@ -77,6 +77,7 @@ Layout {
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;
   padding: 2px;
+  margin-left: 400px;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -120,7 +121,6 @@ Layout {
     height: 40px;
     width: 100px;
     margin-top: 40px;
-    margin-left: 20px;
     background-color: rgb(8, 143, 143);
     color: white;
     border: none;
