@@ -1,5 +1,6 @@
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
+import logo from "../../images/KapraySunLogo.png"
 
 const authenticatedOptions = (
   <>
@@ -33,7 +34,7 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          <img src="../images/KapraySunLogo.png" alt="KAPRAY SUN"/>
+          <img src={logo} alt="KAPRAY SUN"/>
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">HI, {(user.username).toUpperCase()}</div>}
