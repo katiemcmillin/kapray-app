@@ -8,6 +8,12 @@
   height: 250px;
 }
 
+.home-apparel {
+  background-image: url("../../images/Apparel.png");
+  height: 450px;
+  background-repeat: no-repeat;
+}
+
 .home-sign-up {
   background-image: url("https://freefrontend.com/assets/img/css-background-patterns/Background-Triangle-Pattern-HTML-CSS.png");
   background-repeat: no-repeat;
