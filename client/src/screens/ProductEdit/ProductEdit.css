@@ -1,7 +1,6 @@
 .product-edit {
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .image-container {
@@ -28,6 +27,13 @@
   line-height: 1.6;
 }
 
+.edit-form > * {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  text-align: center;
+}
+
 .input-name {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 64px;
@@ -38,7 +44,6 @@
 .textarea-description {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
-  padding: 10px;
   letter-spacing: .9px;
   line-height: 1.6;
 }

@@ -66,8 +66,7 @@ const ProductEdit = (props) => {
         <form className='edit-form' onSubmit={handleSubmit}>
           <input
             className='input-name'
-            placeholder='Name'
-            value={product.name}
+            placeholder={`Name: ${product.name}`}
             name='name'
             required
             autoFocus
@@ -75,16 +74,14 @@ const ProductEdit = (props) => {
           />
           <input
             className='input-price'
-            placeholder='Price'
-            value={product.price}
+            placeholder={`price:${product.price}`}
             name='price'
             required
             onChange={handleChange}
           />
           <input
             className='input-size'
-            placeholder='Size'
-            value={product.size}
+            placeholder={product.size!==' '?`size:${product.size}`:'size: out of stock'}
             name='size'
             required
             onChange={handleChange}
@@ -93,19 +90,9 @@ const ProductEdit = (props) => {
             className='textarea-description'
             rows={10}
             cols={78}
-            placeholder='Description'
-            value={product.description}
+            placeholder={`description: ${product.description}`}
             name='description'
             required
-            onChange={handleChange}
-          />
-          <input
-            className='input-username'
-            placeholder='Username'
-            value={product.username}
-            name='username'
-            required
-            autoFocus
             onChange={handleChange}
           />
           <button type='submit' className='save-button'>
