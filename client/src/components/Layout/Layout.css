@@ -8,6 +8,7 @@
 .layout-children {
   flex: 2;
   margin-top: 100px;
+
 }
 
 @media (max-width: 500px) {
@@ -17,11 +18,7 @@
     flex-direction: column;
   }
   .layout-children {
-    width: 80vw;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 150px;
     align-items: center;
   }
 }
