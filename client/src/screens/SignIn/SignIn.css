@@ -329,3 +329,23 @@ button {
   width: 80%;
   margin: 4em auto;
 }
+@media (max-width: 800px) {
+  .layout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .layout-children {
+    flex: 2;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .form-container {
+    align-items: center;
+    width: 80%;
+  }
+  .form-container form {
+    margin-left: 0px;
+  }
+}
