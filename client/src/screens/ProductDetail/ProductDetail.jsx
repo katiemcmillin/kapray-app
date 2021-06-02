@@ -21,7 +21,6 @@ const ProductDetail = (props) => {
   if (!isLoaded) {
     return <h1>Loading...</h1>
   }
-
   return (
     <Layout user={props.user}>
       <div className='product-detail'>
@@ -31,12 +30,12 @@ const ProductDetail = (props) => {
           alt={product.name}
         />
         <div className='detail'>
-          <div className='name'>{product.name}</div>
-          <div className='price'>{`$${product.price}`}</div>
+          <div >{`$${product.price}`}</div>
+          <div className='name'>{product.name.toUpperCase()}</div>
+          <div className='price2'>{`Available $${product.price} USD`}</div>
+          <div className='size'>{product.size!==" " ?product.size:'out of stock'}</div>
           <div className='description'>{product.description}</div>
-          <div className='size'>{product.size}</div>
-          <div className='username'>{product.username}</div>
-          <div className='button-container'>
+          { props.user && <div className='button-container'>
             <Link className='edit-button' to={`/products/${product._id}/edit`}>
               Edit
             </Link>
@@ -46,7 +45,7 @@ const ProductDetail = (props) => {
             >
               Delete
             </button>
-          </div>
+          </div>}
         </div>
       </div>
     </Layout>
