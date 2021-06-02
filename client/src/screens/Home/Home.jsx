@@ -12,12 +12,12 @@ const Home = (props) => {
       </div>
       <div className="home-apparel">
         <Link to="/products">
-        <h1>APPAREL</h1>
+          <h1>APPAREL</h1>
         </Link>
       </div>
       <div className="home-add-apparel">
         <Link to="/add-product">
-        <h1>ADD APPAREL</h1>
+          <h1>ADD APPAREL</h1>
         </Link>
       </div>
     </Layout>
