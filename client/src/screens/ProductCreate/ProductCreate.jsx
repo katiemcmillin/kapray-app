@@ -36,7 +36,7 @@ const ProductCreate = (props) => {
   return (
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
-        <div className="input-container">
+        <div className="input-container1">
           <label for="name">Name:</label>
           <input
             className="input-title"
@@ -47,7 +47,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container">
+        <div className="input-container2">
           <label for="price">Price:</label>
           <input
             className="input-price"
@@ -57,7 +57,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container">
+        <div className="input-container3">
           <label for="description">Description:</label>
           <input
             rows={10}
@@ -67,7 +67,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container">
+        <div className="input-container4">
           <label for="imgURL">Image Link:</label>
           <input
             className="input-imageURL"
@@ -77,7 +77,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container">
+        <div className="input-container5">
           <label for="username">Username:</label>
           <input
             className="input-username"
@@ -87,7 +87,7 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="input-container">
+        <div className="input-container6">
           <label for="size">Size:</label>
           <input
             className="input-size"
@@ -98,9 +98,9 @@ const ProductCreate = (props) => {
           />
         </div>
         <div className="input-container">
-        <button type="submit" className="submit-button">
-          Submit
-        </button>
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
         </div>
       </form>
     </Layout>

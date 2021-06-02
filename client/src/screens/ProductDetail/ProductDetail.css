@@ -74,6 +74,7 @@
   align-self: center;
   background-color: rgb(216, 1, 1);
   color: white;
+  border: none;
   border-radius: 5%;
   box-shadow: 2px 2px 10px 2px #cecece;
   cursor: pointer;

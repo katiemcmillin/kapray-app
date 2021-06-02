@@ -102,7 +102,6 @@ Layout {
     width: 100%;
   }
   .edit-product-image {
-    /* width: 300px; */
     margin-top: 70px;
   }
   .edit-input-image-link {
@@ -159,7 +158,6 @@ Layout {
   text-align: center;
 }
 .edit-input-image-link {
-  /* width: 100%; */
   margin-left: 8px;
   text-align: center;
   margin-top: 8px;
