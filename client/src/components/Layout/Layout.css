@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .layout-children {
@@ -17,7 +18,7 @@
   }
   .layout-children {
       width: 80vw;
-      padding: 0px;
+      padding-top: 0px;
       margin: 0px;
       display: flex;
       flex-direction: column;
