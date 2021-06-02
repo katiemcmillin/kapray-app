@@ -131,7 +131,16 @@ const insertData = async () => {
       name: "Belted dress",
       imgURL:
         "https://img.ltwebstatic.com/images3_pi/2021/05/05/1620205533b6718c65d29b657a8c607d80df092bd7_thumbnail_600x.webp",
-      description: "Women's royal blue fitted belted dress. Polyester and spandex",
+      description: "Women's royal blue fitted belted dress. Polyester and spandex.",
+      price: "20",
+      size: "6",
+      username: "admin",
+    },
+    {
+      name: "Belted dress",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2021/03/19/1616127179d8eaa82939ca485cefc0ed1c37ecde7b_thumbnail_600x.webp",
+      description: "Women's royal blue fitted belted dress. Polyester and spandex.",
       price: "20",
       size: "6",
       username: "admin",
