@@ -62,7 +62,6 @@ a {
 a:hover {
   transform: scale(1.025);
   font-weight: 500;
-  text-decoration: underline;
 }
 
 @media (max-width: 500px) {
