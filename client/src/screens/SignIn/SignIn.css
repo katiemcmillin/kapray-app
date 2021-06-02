@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   overflow: hidden;
   height: 100%;
 }
@@ -222,7 +222,7 @@ button {
 }
 
 .item a::before {
-  content: '<-';
+  content: "<-";
 }
 
 .item-container .item {
@@ -328,4 +328,32 @@ button {
   grid-template-rows: auto;
   width: 80%;
   margin: 4em auto;
+}
+@media (max-width: 800px) {
+  .form-container {
+    align-items: center;
+    width: 80%;
+  }
+  .form-container form {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 570px) {
+  .form-container {
+  margin-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    margin-left: 70px;
+    margin-top: 200px;
+
+  }
+}
+
+@media (max-width: 425px) {
+  .form-container {
+    margin-left: 50px;
+  }
 }
