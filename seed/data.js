@@ -137,14 +137,33 @@ const insertData = async () => {
       username: "admin",
     },
     {
-      name: "Belted dress",
+      name: "Floral maxi dress",
       imgURL:
         "https://img.ltwebstatic.com/images3_pi/2021/03/19/1616127179d8eaa82939ca485cefc0ed1c37ecde7b_thumbnail_600x.webp",
-      description: "Women's royal blue fitted belted dress. Polyester and spandex.",
+      description: "Red dress with white flowers. Cotton and spandex.",
       price: "20",
+      size: "4",
+      username: "admin",
+    },
+    {
+      name: "Ruffle skirt",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2020/09/16/16002401814e939ecde9ecb9c2793b62b812fd449d_thumbnail_750x.webp",
+      description: "A-line floral multi-colored skirt. Cotton-poly blend. Non-stretch.",
+      price: "15",
+      size: "2",
+      username: "admin",
+    },
+    {
+      name: "Knee-length skirt",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2020/11/13/1605247576275d3115bc6f4b8236f73c0510661ee8_thumbnail_750x.webp",
+      description: "Black skirt. Cotton-poly blend. Non-stretch.",
+      price: "15",
       size: "6",
       username: "admin",
     },
+ 
   ];
 
   await Product.insertMany(products);

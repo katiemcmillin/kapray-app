@@ -58,8 +58,11 @@ const ProductCreate = (props) => {
           />
         </div>
         <div className="input-container">
-          <label for="description">Description:</label>
+          <label className="description" for="description">
+            Description:
+          </label>
           <input
+            className="input-description"
             rows={10}
             value={product.description}
             name="description"
@@ -98,9 +101,9 @@ const ProductCreate = (props) => {
           />
         </div>
         <div className="input-container">
-        <button type="submit" className="submit-button">
-          Submit
-        </button>
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
         </div>
       </form>
     </Layout>

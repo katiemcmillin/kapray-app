@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Products.css";
 
-import { Layout, Product, Search, Sort } from "../../components";
+import { Layout, Product, Search, Sort, Cart } from "../../components";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 import { getProducts } from "../../services/products";
 
@@ -10,6 +10,7 @@ const Products = (props) => {
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
   const [sortType, setSortType] = useState("name-ascending");
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -57,6 +58,12 @@ const Products = (props) => {
 
   const handleSubmit = (event) => event.preventDefault();
 
+  const addToCart = (id) => {
+    const item = products.find((product) => product._id === id)
+    setCart((currentCart) => [...currentCart, item]);
+    localStorage.setItem("cart", cart)
+  }
+
   return (
     <Layout user={props.user}>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
@@ -70,10 +77,12 @@ const Products = (props) => {
               imgURL={product.imgURL}
               price={product.price}
               key={index}
+              addToCart={addToCart}
             />
           );
         })}
       </div>
+      <Cart cart={cart} setCart={setCart} products={products}/>
     </Layout>
   );
 };
