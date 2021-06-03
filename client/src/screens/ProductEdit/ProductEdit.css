@@ -127,6 +127,7 @@ Layout {
     box-shadow: 2px 2px 10px 2px #cecece;
     cursor: pointer;
     padding: 2px;
+    margin-left: 50px;
   }
 }
 
