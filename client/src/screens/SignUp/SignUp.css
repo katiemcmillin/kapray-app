@@ -55,6 +55,7 @@ button {
   margin-top: 3em;
 }
 .form-container {
+  background-color: white;
   align-self: center;
   padding: 1em;
   width: 50%;
