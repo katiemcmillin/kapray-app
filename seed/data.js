@@ -148,7 +148,7 @@ const insertData = async () => {
     {
       name: "Ruffle skirt",
       imgURL:
-        "https://img.ltwebstatic.com/images3_pi/2020/09/16/…39ecde9ecb9c2793b62b812fd449d_thumbnail_600x.webp",
+        "https://img.ltwebstatic.com/images3_pi/2020/09/16/16002401814e939ecde9ecb9c2793b62b812fd449d_thumbnail_750x.webp",
       description: "A-line floral multi-colored skirt. Cotton-poly blend. Non-stretch.",
       price: "15",
       size: "2",
@@ -157,7 +157,7 @@ const insertData = async () => {
     {
       name: "Knee-length skirt",
       imgURL:
-        "https://img.ltwebstatic.com/images3_pi/2020/11/13/…d3115bc6f4b8236f73c0510661ee8_thumbnail_750x.webp",
+        "https://img.ltwebstatic.com/images3_pi/2020/11/13/1605247576275d3115bc6f4b8236f73c0510661ee8_thumbnail_750x.webp",
       description: "Black skirt. Cotton-poly blend. Non-stretch.",
       price: "15",
       size: "6",
