@@ -35,6 +35,7 @@
 
 .description {
   letter-spacing: 0.9px;
+  margin-left: 0px;
 }
 
 .product-detail-image {
@@ -120,5 +121,11 @@
   .edit-button,
   .delete-button {
     width: 40%;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+    .description {
+      margin-left: -23px;
+    }
   }
 }
