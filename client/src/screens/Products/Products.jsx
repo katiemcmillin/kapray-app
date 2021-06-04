@@ -6,6 +6,8 @@ import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 import { getProducts } from "../../services/products";
 
 import cartLogo from "../../images/ShoppingCart.png"
+import backButton from "../../images/BackArrow.png"
+import remove from "../../images/Remove.png"
 
 const PAGE_PRODUCTS = "products";
 const PAGE_CART = "cart";
@@ -79,7 +81,7 @@ const Products = (props) => {
   const renderProducts = () => (
     <>
       <button className="cart-logo-button" onClick={() => navigateTo(PAGE_CART)}>
-        <img src={cartLogo} className="cart-logo"></img>{cart.length}
+        <img src={cartLogo} alt={"CART"} className="cart-logo"></img>{cart.length}
       </button>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
@@ -95,13 +97,13 @@ const Products = (props) => {
 
   const renderCart = () => (
     <>
-      <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
-        Back to Products
+      <button className="back-button" onClick={() => navigateTo(PAGE_PRODUCTS)}>
+        <img src={backButton} alt={"BACK"}></img>
       </button>
-      <div className="products">
-        <div className="product-div">
+      <p className="cart-title">CART</p>
+        <div className="cart-products">
           {cart.map((product, index) => (
-            <div key={index}>
+            <div className="product-div" key={index}>
               <img
                 className="product-image"
                 src={product.imgURL}
@@ -109,13 +111,12 @@ const Products = (props) => {
               />
               <div className="product-name">{product.name}</div>
               <div className="price">{`$${product.price}`}</div>
-              <button type="submit" onClick={() => removeFromCart(product)}>
-                REMOVE
+              <button className="remove-button" type="submit" onClick={() => removeFromCart(product)}>
+                <img src={remove} alt={"REMOVE"}></img>
               </button>
             </div>
           ))}
         </div>
-      </div>
     </>
   );
 
