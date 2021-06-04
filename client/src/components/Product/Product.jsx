@@ -1,6 +1,8 @@
 import "./Product.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import addItem from "../../images/AddItem.png"
+import checkmark from "../../images/Checkmark.png"
 
 const Product = ({ product, addToCart }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -22,9 +24,9 @@ const Product = ({ product, addToCart }) => {
         </Link>
         {!isClicked ? (
           <button onClick={handleClick} className="cart-button">
-            ADD TO CART
+            <img src={addItem} alt={"ADD TO CART"}></img>
           </button>
-        ) : null}
+        ) : <img className="checkmark" alt={"ADDED"}src={checkmark}></img>}
       </div>
     </>
   );
