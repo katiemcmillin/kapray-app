@@ -163,7 +163,24 @@ const insertData = async () => {
       size: "6",
       username: "admin",
     },
- 
+    {
+      name: "Vintage earrings",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2021/04/13/16183083294beed8f391f2884f7d34011f2e5d0460_thumbnail_600x.webp",
+      description: "Gold-colored dangle earrings.",
+      price: "10",
+      size: "N/A",
+      username: "admin",
+    },
+    {
+      name: "Hollowed out ring",
+      imgURL:
+        "https://img.ltwebstatic.com/images3_pi/2021/04/14/161838097204e705a7861a0cac243cb9ee786e5a70_thumbnail_600x.webp",
+      description: "Silver alloy.",
+      price: "12",
+      size: "N/A",
+      username: "admin",
+    },
   ];
 
   await Product.insertMany(products);

@@ -1,8 +1,21 @@
-.products {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.cart-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 750px;
+}
+
+.products,
+.cart-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
+}
+
+.product-div {
+  padding: 0px 20px;
 }
 
 .sort-container {
@@ -25,6 +38,52 @@ select {
   font-size: 18px;
 }
 
+.cart-logo-button,
+.back-button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 25px;
+  position: fixed;
+}
+
+.cart-logo,
+.back-button img {
+  height: 60px;
+  width: 60px;
+}
+
+.remove-button img {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.remove-button {
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .cart-logo-button,
+  .back-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 25px;
+    position: fixed;
+    margin-top: 50px;
+  }
+  .cart-button {
+    margin-right: 50px;
+  }
+}
+
 @media (max-width: 500px) {
   .products {
     width: 100%;
@@ -34,5 +93,19 @@ select {
     width: 100%;
     justify-content: center;
     margin: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .cart-logo-button,
+  .back-button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 25px;
+    position: fixed;
+  }
+  .cart-button {
+    margin-right: 0px;
   }
 }

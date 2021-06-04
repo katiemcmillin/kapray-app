@@ -130,6 +130,13 @@ textarea {
 
   .input-description {
     margin-left: 0px;
+    width: 200px;
+  }
+  .input-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8px -30px;
   }
 }
 
@@ -190,14 +197,6 @@ textarea {
   input,
   textarea {
     font-size: 28px;
-  }
-
-  .description {
-    margin-left: -23px;
-  }
-
-  .input-description {
-    margin-left: 20px;
   }
 }
 

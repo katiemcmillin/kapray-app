@@ -25,8 +25,14 @@ nav {
 .logo {
   text-align: center;
   flex: 1;
-  width: 350px;
+  width: 300px;
   transition: 250ms all;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 145px;
 }
 
 .logo:hover {
@@ -48,7 +54,7 @@ nav {
 }
 
 .welcome {
-  padding: 0 100px;
+  padding: 0 10px;
 }
 
 a {
@@ -65,21 +71,68 @@ a:hover {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 1450px) {
+  a,
+  .welcome {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  a,
+  .welcome {
+    font-size: 24px;
+  }
+  .logo {
+    width: 300px;
+  }
+  .logo img {
+    height: 135px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
-  a {
-    font-size: 27.5px;
+  a,
+  .welcome {
+    font-size: 22px;
+  }
+  .logo {
+    width: 250px;
+  }
+  .logo img {
+    height: 125px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  a,
+  .welcome {
+    font-size: 20px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .logo img {
+    height: 115px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  a {
-    font-size: 25px;
+  a,
+  .welcome {
+    font-size: 18px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .logo img {
+    height: 105px;
   }
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 890px) {
   a {
-    font-size: 23.5px;
+    font-size: 18px;
   }
   .nav {
     flex-direction: column;
@@ -88,16 +141,32 @@ a:hover {
   .links {
     width: 100%;
   }
+  .logo {
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  .logo img {
+    height: 85px;
+  }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 700px) {
   a {
-    font-size: 20px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  a {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 570px) {
-  nav {
+  .nav {
+    display: flex;
+    flex-direction: row;
     width: 100%;
   }
   .links {
