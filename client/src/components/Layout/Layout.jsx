@@ -1,6 +1,5 @@
 import './Layout.css'
 import Nav from '../Nav/Nav'
-import Footer from '../Footer/Footer'
 
 const Layout = (props) => (
     <div className='layout'>
@@ -8,7 +7,6 @@ const Layout = (props) => (
         <div className="layout-children">
             {props.children}
         </div>
-        <Footer />
     </div>
 )
 
