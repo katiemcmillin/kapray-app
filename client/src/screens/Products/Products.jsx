@@ -27,7 +27,7 @@ const Products = (props) => {
       setSearchResult(allProducts);
     };
     fetchProducts();
-  }, []);
+  }, [products]);
 
   const handleSort = (type) => {
     if (type !== "" && type !== undefined) {
