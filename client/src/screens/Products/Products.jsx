@@ -82,7 +82,7 @@ const Products = (props) => {
           );
         })}
       </div>
-      <Cart cart={cart} setCart={setCart} products={products}/>
+      {/* <Cart cart={cart} setCart={setCart} products={products}/> */}
     </Layout>
   );
 };
