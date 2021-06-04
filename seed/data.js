@@ -176,8 +176,8 @@ const insertData = async () => {
       name: "Hollowed out ring",
       imgURL:
         "https://img.ltwebstatic.com/images3_pi/2021/04/14/161838097204e705a7861a0cac243cb9ee786e5a70_thumbnail_600x.webp",
-      description: "Gold-colored dangle earrings.",
-      price: "10",
+      description: "Silver alloy.",
+      price: "12",
       size: "N/A",
       username: "admin",
     },
