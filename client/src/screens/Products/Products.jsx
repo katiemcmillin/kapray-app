@@ -5,6 +5,8 @@ import { Layout, Product, Search, Sort } from "../../components";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 import { getProducts } from "../../services/products";
 
+import cartLogo from "../../images/ShoppingCart.png"
+
 const PAGE_PRODUCTS = "products";
 const PAGE_CART = "cart";
 
@@ -76,8 +78,8 @@ const Products = (props) => {
 
   const renderProducts = () => (
     <>
-      <button onClick={() => navigateTo(PAGE_CART)}>
-        Go to Cart ({cart.length})
+      <button className="cart-logo-button" onClick={() => navigateTo(PAGE_CART)}>
+        <img src={cartLogo} className="cart-logo"></img>{cart.length}
       </button>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
