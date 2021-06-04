@@ -1,7 +1,13 @@
 import "./Product.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Product = ({ product, addToCart }) => {
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = () => {
+    addToCart(product);
+    setIsClicked(true);
+  };
   return (
     <>
       <div className="product-div">
@@ -14,9 +20,11 @@ const Product = ({ product, addToCart }) => {
           <div className="product-name">{product.name}</div>
           <div className="price">{`$${product.price}`}</div>
         </Link>
-        <button onClick={() => addToCart(product)} className="cart-button">
-          ADD TO CART
-        </button>
+        {!isClicked ? (
+          <button onClick={handleClick} className="cart-button">
+            ADD TO CART
+          </button>
+        ) : null}
       </div>
     </>
   );
