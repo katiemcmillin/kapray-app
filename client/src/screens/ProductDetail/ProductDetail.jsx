@@ -3,6 +3,7 @@ import "./ProductDetail.css";
 import { Layout } from "../../components";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useParams, Link, useHistory } from "react-router-dom";
+import { getProducts } from "../../services/products";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -10,9 +11,10 @@ const ProductDetail = (props) => {
   const { id } = useParams();
 
   let history = useHistory();
-  
+
   const handleClick = () => {
     deleteProduct(product._id);
+    getProducts()
     history.push("/products");
   };
 
