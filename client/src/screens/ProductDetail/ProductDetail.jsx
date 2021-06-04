@@ -12,8 +12,9 @@ const ProductDetail = (props) => {
   let history = useHistory();
   const handleClick = () => {
     deleteProduct(product._id)
-    history.push("/products")
-  } 
+     history.push("/products")
+    }
+  
 
   useEffect(() => {
     const fetchProduct = async () => {
