@@ -79,42 +79,7 @@ Layout {
   padding: 2px;
   margin-left: 400px;
 }
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  .input-name {
-    text-align: center;
-    width: 100%;
-    font-size: 24px;
-    padding: 8px;
-  }
-  .edit-form {
-    text-align: center;
-    margin-right: 10px;
-  }
-  .textarea-description {
-    width: 100%;
-  }
-  .product-edit {
-    width: 100%;
-    flex-direction: column;
-    margin-left: 70px;
-  }
-  .image-container {
-    width: 100%;
-  }
-  .edit-product-image {
-    margin-top: 70px;
-  }
-  .edit-input-image-link {
-    width: 100%;
-    margin-left: 8px;
-    text-align: center;
-    margin-top: 8px;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-  }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .save-button {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
@@ -181,7 +146,41 @@ Layout {
   padding: 2px;
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .input-name {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 8px;
+  }
+  .edit-form {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .textarea-description {
+    width: 100%;
+  }
+  .product-edit {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .edit-product-image {
+    margin-top: 70px;
+  }
+  .edit-input-image-link {
+    width: 100%;
+    margin-left: 8px;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
   .save-button {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
