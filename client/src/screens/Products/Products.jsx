@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import "./Products.css";
 
-import { Layout, Product, Search, Sort, Cart } from "../../components";
+import { Layout, Product, Search, Sort } from "../../components";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 import { getProducts } from "../../services/products";
+
+const PAGE_PRODUCTS = "products";
+const PAGE_CART = "cart";
 
 const Products = (props) => {
   const [products, setProducts] = useState([]);
@@ -11,6 +14,7 @@ const Products = (props) => {
   const [applySort, setApplySort] = useState(false);
   const [sortType, setSortType] = useState("name-ascending");
   const [cart, setCart] = useState([]);
+  const [page, setPage] = useState(PAGE_PRODUCTS);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -58,31 +62,65 @@ const Products = (props) => {
 
   const handleSubmit = (event) => event.preventDefault();
 
-  const addToCart = (id) => {
-    const item = products.find((product) => product._id === id)
-    setCart((currentCart) => [...currentCart, item]);
-    localStorage.setItem("cart", cart)
-  }
+  const addToCart = (product) => {
+    setCart([...cart, { ...product }]);
+  };
 
-  return (
-    <Layout user={props.user}>
+  const removeFromCart = (productToRemove) => {
+    setCart(cart.filter((product) => product !== productToRemove));
+  };
+
+  const navigateTo = (nextPage) => {
+    setPage(nextPage);
+  };
+
+  const renderProducts = () => (
+    <>
+      <button onClick={() => navigateTo(PAGE_CART)}>
+        Go to Cart ({cart.length})
+      </button>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="products">
         {searchResult.map((product, index) => {
           return (
-            <Product
-              _id={product._id}
-              name={product.name}
-              imgURL={product.imgURL}
-              price={product.price}
-              key={index}
-              addToCart={addToCart}
-            />
+            <Product product={product} key={index} addToCart={addToCart} />
           );
         })}
       </div>
-      {/* <Cart cart={cart} setCart={setCart} products={products}/> */}
+    </>
+  );
+
+  const renderCart = () => (
+    <>
+      <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
+        Back to Products
+      </button>
+      <div className="products">
+        <div className="product-div">
+          {cart.map((product, index) => (
+            <div key={index}>
+              <img
+                className="product-image"
+                src={product.imgURL}
+                alt={product.name}
+              />
+              <div className="product-name">{product.name}</div>
+              <div className="price">{`$${product.price}`}</div>
+              <button type="submit" onClick={() => removeFromCart(product)}>
+                REMOVE
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+
+  return (
+    <Layout user={props.user}>
+      {page === PAGE_PRODUCTS && renderProducts()}
+      {page === PAGE_CART && renderCart()}
     </Layout>
   );
 };
