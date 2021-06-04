@@ -9,7 +9,7 @@
 }
 
 .home-apparel {
-  background-image: url("../../images/Apparel.png");
+  background-image: url("../../images/Apparel4.png");
   height: 400px;
   background-repeat: no-repeat;
 }
@@ -17,10 +17,13 @@
 .home-sign-up {
   background-image: url("https://freefrontend.com/assets/img/css-background-patterns/Background-Triangle-Pattern-HTML-CSS.png");
   background-repeat: no-repeat;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .home-add-apparel {
   background-image: url("https://img.wattpad.com/userbg/Isis_Emmy.57028.jpg");
+  margin-top: 25px;
 }
 
 h1 {
@@ -28,6 +31,7 @@ h1 {
   width: 500px;
   align-self: center;
   border: 5px solid  black;
+  border-radius: 15px;
 }
 
 h1:hover {
