@@ -1,8 +1,21 @@
-.products {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.cart-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 750px;
+}
+
+.products,
+.cart-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 40px;
+}
+
+.product-div {
+  padding: 0px 20px;
 }
 
 .sort-container {
@@ -25,7 +38,8 @@ select {
   font-size: 18px;
 }
 
-.cart-logo-button {
+.cart-logo-button,
+.back-button {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -33,9 +47,26 @@ select {
   position: fixed;
 }
 
-.cart-logo {
+.cart-logo,
+.back-button img {
   height: 60px;
   width: 60px;
+}
+
+.remove-button img {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.remove-button {
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 
 @media (max-width: 500px) {
