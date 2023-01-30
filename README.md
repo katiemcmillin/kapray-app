@@ -2,7 +2,7 @@
 
 ## KAPRAY App
 
-https://kapray-sun.netlify.app/
+https://kapray-render-app.netlify.app/
 
 ## Project Description
 
