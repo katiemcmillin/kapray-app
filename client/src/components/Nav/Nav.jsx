@@ -5,7 +5,7 @@ import logo from "../../images/KapraySunLogo.png"
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/add-product">
-      ADD APPAREL
+      ADD APPARELS
     </NavLink>
     <NavLink className="link" to="/sign-out">
       SIGN OUT
